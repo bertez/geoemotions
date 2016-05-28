@@ -1,0 +1,15 @@
+.home {
+    video {
+        @include fullscreen;
+    }
+
+    .continue {
+        position: absolute;
+        right: 2rem;
+        bottom: 2rem;
+        padding: 1rem;
+        background: rgba(255,255,255,0.4);
+        text-decoration: none;
+        color: $negative;
+    }
+}

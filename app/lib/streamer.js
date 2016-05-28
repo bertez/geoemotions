@@ -36,22 +36,23 @@ module.exports.stream = (app) => {
         }
     });
 
-    const gotTweet = (tweet, continent, code) => {
+    let gateway;
 
+    io.on('connection', (socket) => {
+        gateway = socket;
+    });
+
+    const gotTweet = (tweet, continent, code) => {
         const payload = {
             continent,
             code,
             text: tweet.text,
             image: tweet.entities.media[0].media_url,
-            emoji: tweet.text.match(/❤|\ud83d[\ude00-\ude4f]/g),
+            emoji: tweet.text.match(/\ud83d[\ude00-\ude4f]/g),
             created_at: tweet.created_at
         };
 
-        if (app) {
-            io.on('connection', (socket) => {
-                socket.emit(continent, payload);
-            });
-        }
+        gateway && gateway.emit(continent, payload);
 
         console.warn(payload.continent, payload.code, payload.image);
         db.insert(payload);

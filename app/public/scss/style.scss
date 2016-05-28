@@ -9,8 +9,29 @@ $block: #eee;
 @import 'mixins';
 @import 'animations';
 @import 'utilities/normalize';
+@import 'utilities/justified-gallery';
+
+//Pages
+@import 'pages/home';
+@import 'pages/select';
+@import 'pages/show';
+@import 'pages/about';
 
 //Fonts
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,300,700,800);
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
 
 
+header.main {
+    background: $negative;
+    padding: 1rem;
+    h1 {
+        margin: 0;
+        img {
+            height: 60px;
+        }
+    }
+}

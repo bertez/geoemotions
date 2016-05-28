@@ -11,5 +11,4 @@ if(PRODUCTION) {
     //Production
 }
 
-
-
+$('img').on('error', (e) => $(e.target).remove());

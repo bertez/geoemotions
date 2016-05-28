@@ -1,0 +1,29 @@
+{{> header}}
+
+<article class="show">
+    <header>
+        <h1>{{{__ 'With these images people in different places express %s' emotion}}}</h1>
+    </header>
+
+    <div class="panels">
+        <div data-continent="{{c1.code}}" class="panel">
+        <h2>{{__ 'People from %s' c1.name}}</h2>
+        <div data-images class="images">
+            {{#each c1.tweets}}
+                <a href="{{image}}"><img src="{{image}}" alt="{{text}}"></a>
+            {{/each}}
+        </div>
+        </div>
+
+        <hr/>
+
+        <div data-continent="{{c2.code}}" class="panel">
+        <h2>{{__ 'People from %s' c2.name}}</h2>
+        <div data-images class="images">
+            {{#each c2.tweets}}
+                <a href="{{image}}"><img src="{{image}}" alt="{{text}}"></a>
+            {{/each}}
+        </div>
+        </div>
+    </div>
+</article>

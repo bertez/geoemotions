@@ -16,6 +16,9 @@ module.exports = (app) => {
      * Public
      */
     app.get('/', twoplaces.index);
+    app.get('/select', twoplaces.select);
+    app.post('/show', twoplaces.show);
+    app.get('/about', twoplaces.about);
 
 
     //Locales

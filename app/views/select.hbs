@@ -1,0 +1,48 @@
+{{> header}}
+
+<article class="select">
+    <header>
+        <p>{{__ 'Choose an emoji and two continents below to discover how emotions are translated into images by people in the different parts of the world'}}</p>
+    </header>
+    <section class="form">
+        <form action="/show" method="post">
+            <div class="emotion">
+                <input id="grin" type="radio" name="emotion" value="grin" checked>
+                <label for="grin">😀</label>
+                <input id="joy" type="radio" name="emotion" value="joy">
+                <label for="joy">😂</label>
+                <input id="relaxed" type="radio" name="emotion" value="relaxed">
+                <label for="relaxed">😊</label>
+                <input id="sob" type="radio" name="emotion" value="sob">
+                <label for="sob">😭</label>
+                <input id="unamused" type="radio" name="emotion" value="unamused">
+                <label for="unamused">😒</label>
+            </div>
+            <div class="continents">
+                <div>
+
+                    <select name="continent1">
+                        <option value="AF">{{__ 'Africa'}}</option>
+                        <option value="AS">{{__ 'Asia'}}</option>
+                        <option value="EU">{{__ 'Europe'}}</option>
+                        <option value="NA">{{__ 'North America'}}</option>
+                        <option value="OC">{{__ 'Oceania'}}</option>
+                        <option value="SA" selected>{{__ 'South America'}}</option>
+                    </select>
+                </div>
+                <div>
+
+                    <select name="continent2">
+                        <option value="AF">{{__ 'Africa'}}</option>
+                        <option value="AS">{{__ 'Asia'}}</option>
+                        <option value="EU" selected>{{__ 'Europe'}}</option>
+                        <option value="NA">{{__ 'North America'}}</option>
+                        <option value="OC">{{__ 'Oceania'}}</option>
+                        <option value="SA">{{__ 'South America'}}</option>
+                    </select>
+                </div>
+            </div>
+            <button type="submit">{{__ 'Show me!'}}</button>
+            </post>
+    </section>
+</article>

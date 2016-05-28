@@ -31,6 +31,6 @@
 //Flex
 
 @mixin flexCenter {
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 }

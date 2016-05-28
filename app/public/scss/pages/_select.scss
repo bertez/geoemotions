@@ -1,0 +1,61 @@
+.select {
+    > header {
+        font-size: 2rem;
+        text-align: center;
+        padding: 2rem 4rem;
+        font-weight: bolder;
+    }
+    .form {
+        font-size: 2rem;
+        flex-grow: 1;
+        text-align: center;
+
+        button {
+            border: none;
+            background: $negative;
+            color: $positive;
+            padding: 1rem;
+        }
+
+        .continents {
+            display: flex;
+            margin-bottom: 2rem;
+            @include flexCenter;
+
+            select {
+                margin: 2rem 2rem;
+                appearance: none;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                width: 100%;
+                //<?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px" height="16px" viewBox="0 0 16 16"><polyline fill-rule="evenodd" clip-rule="evenodd" fill="none" stroke="#808080" stroke-width="2" stroke-miterlimit="10" points="0.5,4.2 8,11.8 15.5,4.2 "/></svg>
+                background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjE2cHgiIGhlaWdodD0iMTZweCIgdmlld0JveD0iMCAwIDE2IDE2Ij48cG9seWxpbmUgZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzgwODA4MCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHBvaW50cz0iMC41LDQuMiA4LDExLjggMTUuNSw0LjIgIi8+PC9zdmc+');
+                background-repeat: no-repeat;
+                background-position: right 16px center;
+                appearance: none;
+                border-radius: 0;
+                background-color: white;
+                border-radius: 3px;
+                padding: 0.35em 0.5em;
+                padding-right: 3rem;
+                box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                height: 60px;
+            }
+        }
+
+        .emotion {
+            font-size: 4rem;
+            input {
+                appearance: none;
+            }
+            input:checked + label {
+                filter: none;
+            }
+            label {
+                transition: all 100ms ease-in;
+                filter: brightness(1.8) grayscale(1) opacity(.7);
+            }
+        }
+    }
+}

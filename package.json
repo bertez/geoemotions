@@ -22,6 +22,7 @@
     "gulp-watch": "^4.3.5",
     "install": "^0.8.1",
     "jquery": "^2.2.2",
+    "justifiedGallery": "^3.6.2",
     "merge": "^1.2.0",
     "nodemon": "^1.8.1",
     "npm": "^3.9.3",

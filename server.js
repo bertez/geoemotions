@@ -51,14 +51,14 @@ module.exports.startServer = function () {
 
     require('./config/express')(app);
     require('./config/routes')(app);
-    require('./app/lib/stream')(app);
 
 
     /**
      * Server
      */
     const serve = () => {
-        app.listen(port, host);
+        const server = app.listen(port, host);
+        require('./app/lib/streamer').stream(server);
 
         console.warn(`App listening on ${host}:${port}`);
     };

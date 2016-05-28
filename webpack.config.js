@@ -3,7 +3,9 @@ const webpack = require('webpack');
 module.exports = {
     cache: true,
     entry: {
-        main: './app/public/js/main.js'
+        main: './app/public/js/main.js',
+        select: './app/public/js/select.js',
+        show: './app/public/js/show.js'
     },
     output: {
         path: './dist/js',
@@ -12,7 +14,10 @@ module.exports = {
         chunkFilename: '[id].[name].js'
     },
     resolve: {
-        modulesDirectories: ['node_modules', 'web_modules', 'modules']
+        modulesDirectories: ['node_modules', 'web_modules', 'modules'],
+        alias: {
+            justifiedGallery: 'justifiedGallery/dist/js/jquery.justifiedGallery.js'
+        }
     },
     module: {
         loaders: [{
@@ -31,7 +36,12 @@ module.exports = {
         }),
         new webpack.ResolverPlugin([
             new webpack.ResolverPlugin.DirectoryDescriptionFilePlugin('bower.json', ['main'])
-        ])
+        ]),
+        new webpack.ProvidePlugin({
+            jQuery: 'jquery',
+            $: 'jquery',
+            'window.jQuery': 'jquery'
+        })
     ],
     node: {
         fs: 'empty'

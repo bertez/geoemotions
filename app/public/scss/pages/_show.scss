@@ -1,0 +1,32 @@
+.show {
+
+    header {
+        text-align: center;
+        background: $negative;
+        h1 {
+            margin: 0;
+            padding: 3rem 0;
+            color: $positive;
+        }
+    }
+
+    .panels {
+        display: flex;
+        @include flexCenter;
+
+        > :nth-child(2) {
+            border-left: 6px solid $negative;
+
+        }
+
+        .panel {
+
+            flex: 1 auto;
+            h2 {
+                flex: 1 100%;
+                text-align: center;
+            }
+        }
+    }
+
+}

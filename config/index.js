@@ -24,7 +24,7 @@ const defaults = {
         syncFiles: true,
         cookie: 'locale'
     },
-    track: '❤,😂,😊,😒,😭',
+    track: '😀,😂,😊,😒,😭',
     persistence: path.join(__dirname, '../data.db')
 };
 

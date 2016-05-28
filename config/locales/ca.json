@@ -1,1 +1,18 @@
-{}
+{
+	"Choose two continents and an emotion": "Choose two continents and an emotion",
+	"Europe": "Europe",
+	"Asia": "Asia",
+	"Africa": "Africa",
+	"North America": "North America",
+	"South America": "South America",
+	"Oceania": "Oceania",
+	"Show me!": "Show me!",
+	"Error": "Error",
+	"These images show you %s": "These images show you %s",
+	"People from %s": "People from %s",
+	"These images show you <img src=\"%s\">": "These images show you <img src=\"%s\">",
+	"Choose an emoji and a continent to discover how emotions are translated into images by people in the different parts of the world": "Choose an emoji and a continent to discover how emotions are translated into images by people in the different parts of the world",
+	"Choose an emoji and two continents below to discover how emotions are translated into images by people in the different parts of the world": "Choose an emoji and two continents below to discover how emotions are translated into images by people in the different parts of the world",
+	"With these images people in different places express %s": "With these images people in different places express %s",
+	"Continue": "Continue"
+}
