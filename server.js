@@ -15,6 +15,10 @@
  *  - URL
  *  - DESCRIPTION
  *  - IMAGE
+ *  - CONSUMER_KEY
+ *  - CONSUMER_SECRET
+ *  - TOKEN
+ *  - TOKEN_SECRET
  */
 
 const express = require('express');
@@ -24,6 +28,8 @@ const config = require('./config');
 
 const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 8080;
+
+const streamer = require('./app/lib/streamer');
 
 
 /**
@@ -45,6 +51,7 @@ module.exports.startServer = function () {
 
     require('./config/express')(app);
     require('./config/routes')(app);
+    require('./app/lib/stream')(app);
 
 
     /**
@@ -52,6 +59,7 @@ module.exports.startServer = function () {
      */
     const serve = () => {
         app.listen(port, host);
+
         console.warn(`App listening on ${host}:${port}`);
     };
 

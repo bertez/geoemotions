@@ -23,7 +23,9 @@ const defaults = {
         directory: path.join(__dirname, 'locales'),
         syncFiles: true,
         cookie: 'locale'
-    }
+    },
+    track: '❤,😂,😊,😒,😭',
+    persistence: path.join(__dirname, '../data.db')
 };
 
 

@@ -3,6 +3,10 @@
   "description": "",
   "main": "server.js",
   "authors": [
+    "Jimena Tormo <jimena.tormo17@gmail.com>",
+    "Jessica Peña <jess.pena.15@gmail.com>",
+    "Jordie <jordie@matchbox.media>",
+    "James Santos <jamessantos1992@gmail.com>",
     "Berto Yáñez <berto@ber.to>"
   ],
   "license": "MIT",
