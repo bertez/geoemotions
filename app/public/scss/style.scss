@@ -1,0 +1,16 @@
+//Variables
+$positive: #fff;
+$negative: #000;
+$link: #3079ed;
+$block: #eee;
+
+//Modules
+@import '../web_modules/font-awesome/scss/font-awesome';
+@import 'mixins';
+@import 'animations';
+@import 'utilities/normalize';
+
+//Fonts
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800);
+
+

@@ -1,0 +1,22 @@
+{
+  "name": "two places",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Berto Yáñez <berto@ber.to>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./app/public/web_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "^4.5.0"
+  }
+}
