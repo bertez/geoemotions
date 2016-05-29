@@ -9,6 +9,7 @@ npm-debug.log
 
 dist
 logs
+data.db
 
 #dev config
 config/env/dev.env.json
