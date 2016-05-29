@@ -54,7 +54,6 @@ module.exports.stream = (app) => {
 
         gateway && gateway.emit(continent, payload);
 
-        console.warn(payload.continent, payload.code, payload.image);
         db.insert(payload);
     };
 
