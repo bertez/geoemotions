@@ -15,7 +15,7 @@ $panels.find('[data-images]').justifiedGallery({
 //Update tweets from websocket
 const io = require('socket.io-client');
 
-const socket = io('ws://localhost:9977');
+const socket = io('ws://geoemotions.akane.ber.to');
 
 socket.on('connect', () => {
     for (let panel of $panels) {
