@@ -29,8 +29,6 @@ const config = require('./config');
 const host = process.env.HOST || 'localhost';
 const port = process.env.PORT || 8080;
 
-const streamer = require('./app/lib/streamer');
-
 
 /**
  * Server module
